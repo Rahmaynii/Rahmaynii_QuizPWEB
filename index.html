@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <title>Formulir Pendaftaran</title>
+ <style type="text/css">
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+   }
+
+ * {
+
+  box-sizing: border-box;
+
+}
+
+form {
+
+  padding: 1em;
+
+  background: #f9f9f9;
+
+  border: 1px solid #c1c1c1;
+
+  margin-top: 2rem;
+
+  max-width: 600px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  padding: 1em;
+
+}
+
+form input {
+
+  margin-bottom: 1rem;
+
+  background: #fff;
+
+  border: 1px solid #9c9c9c;
+
+}
+
+form button {
+
+  background: lightgrey;
+
+  padding: 0.7em;
+
+  border: 0;
+
+}
+
+
+
+form button:hover {
+
+  background: blue;
+
+  color: white;
+
+}
+
+form span a{
+
+  background: lightblue;
+
+  padding: 0.7em;
+
+  border: 0;
+
+  text-decoration: none;
+
+  color: black;
+
+  text-align: center;
+
+}
+
+
+
+form span a:hover {
+
+  background: blue;
+
+  color: white;
+
+}
+
+
+
+
+
+label {
+
+  text-align: right;
+
+  display: block;
+
+  padding: 0.5em 1.5em 0.5em 0;
+
+}
+
+input {
+
+  width: 100%;
+
+  padding: 0.7em;
+
+  margin-bottom: 0.5rem;
+
+}
+
+input:focus {
+
+  outline: 3px solid blue;
+
+}
+
+select {
+
+  width: 100%;
+
+  padding: 0.7em;
+
+  margin-bottom: 0.5rem;
+
+}
+
+select:focus {
+
+  outline: 3px solid blue;
+
+}
+
+@media (min-width: 400px) {
+
+  form {
+
+    overflow: hidden;
+
+  }
+
+  label {
+
+    float: left;
+
+    width: 200px;
+
+  }
+
+  input {
+
+    float: left;
+
+    width: calc(100% - 200px);
+
+  }
+
+
+
+    select {
+
+    float: left;
+
+    width: calc(100% - 200px);
+
+  }
+
+  button {
+
+    float: right;
+
+    width: calc(100% - 200px);
+
+  }
+
+ </style>
+
+</head>
+
+<body>
+
+ <form action="sukses.php" method="GET">
+
+  <h1 align="center">Formulir Pendaftaran</h1>
+        <label>Nama Peserta</label>
+
+        <input name="nama_peserta" type="text">
+
+        <label>Tempat Lahir</label>
+
+        <input name="tempat_lahir" type="text">
+
+        <label>Tanggal Lahir</label>
+
+        <input name="tanggal_lahir" type="date">
+
+        <label>Utusan Unit TKA/TPA</label>
+
+        <input name="utusan_unit" type="text">
+
+        <label>Kelurahan/Desa</label>
+
+        <input name="kelurahan_desa" type="text">
+
+        <label>Kecamatan</label>
+
+        <input name="nama_kecamatan" type="text">
+
+        <label>No.HP</label>
+
+        <input name="no_hp" type="text">
+
+        <label>Jenis Lomba</label>
+
+        <select name="jenis_lomba">
+
+         <option value="Tarik_Tambang">Tarik Tambangn Terdiri dari 4 Perempuan dan 1 Laki-Laki</option>
+
+         <option value="Lari Esstafet">Lari Estafet Terdiri dari 4 Perempuan </option>
+
+         <option value="Gobak_Sodor">Gobak Sodor Terdiri dari 4 Perempuan</option>
+
+         <option value="Tartil">Tartil Terdiri dari 1 Orang Perwakilan TKA/TPA</option>
+
+         <option value="Ceramah">Ceramah Terdiri dari 1 Orang Perwakilan TKA/TPA</option>
+
+        </select>
+
+        <button>Daftar</button>
+
+ </form>
+
+</body>
+
+
+</html>
